@@ -17,7 +17,7 @@ st.set_page_config(
     page_icon="⚖️"
 )
 
-client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+client = Groq(api_key=st.secrets.Keys.GROQ_API_KEY)
 
 # Initialize session state for chat history
 if "messages" not in st.session_state:
